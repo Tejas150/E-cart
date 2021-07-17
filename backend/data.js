@@ -7,6 +7,15 @@ const data = {
           email:"admin@example.com",
           password: bcrypt.hashSync("1234", 8),
           isAdmin: true,
+          isSeller:true,
+        /* adding this part "seller" */
+          seller: {
+          name: 'Puma',
+          logo: '/images/logo1.png',
+          description: 'best seller',
+          rating: 4.5,
+          numReviews: 120,
+},
         },
         {
           name: 'yusuf',
@@ -24,8 +33,8 @@ const data = {
             price: 120,
             countInStock: 10,
             brand: 'Peter England',
-            rating: 4.5,
-            numReviews: 10,
+            rating: 0,
+            numReviews: 0,
             description: 'High quality product',
         },
         {
@@ -35,8 +44,8 @@ const data = {
             price: 80,
             countInStock: 20,
             brand: 'Nike',
-            rating: 4.0,
-            numReviews: 12,
+            rating: 0,
+            numReviews: 0,
             description: 'High quality product',
         },
         {
@@ -84,5 +93,5 @@ const data = {
             description: 'High quality product',
         },
     ],
-};
+ };
 export default data;
