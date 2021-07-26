@@ -153,19 +153,11 @@ a.brand {
 
 .col-1 {
   flex: 1 1 20rem;
-
-}
-
-.col-2 {
-  flex: 2 1 40rem;
-}
-
-.col-3 {
   flex: 32 1 75rem;
 }
 
 .min-30 {
-  min-width: 30rem;
+  min-width: 20rem;
 }
 
 p-1 {
@@ -377,7 +369,7 @@ img.large {
 }
 
 .seller-background {
-  margin-top: 6rem;
+  margin-top: 1rem;
 }
 
 .carousel .slide img {
