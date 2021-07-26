@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   height:100vh;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: Helvetica, Arial, sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,27 +28,27 @@ header {
   grid-area: header;
   background-color: rgb(129, 236, 204);
   width: 100%;
-    height:max-content;
+  height:max-content;
 }
 
 main {
   grid-area: main;
-  padding: 1rem;
+  padding: 5rem 1rem 1rem 1rem;
 }
 
 footer {
   grid-area: footer;
   background-color: rgb(129, 236, 204);
-  font-size: 1.2rem;
+  font-size: 1rem;
 } 
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 1rem 0;
 }
 
 h2{
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: 1rem 0;
 }
 
@@ -81,7 +81,7 @@ button {
   padding: 1rem;
   border-radius: 0.5rem;
   border: 0.1rem #28d4c87a solid;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-family: Helvetica, Arial, sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -225,11 +225,13 @@ img.small {
 }
 
 img.medium {
-  max-width: 29rem;
+  max-width: 22rem;
   width: 100%;
 }
 
 img.large {
+  min-width: 2rem;
+  max-width: 30rem;
   width: 100%;
 }
 
@@ -355,12 +357,12 @@ img.large {
 }
 
 .table {
-  width: 100%;
+  width: 50%;
   border-collapse: collapse;
 }
 
 .table tbody tr:nth-of-type(odd) {
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 .table td,
@@ -374,22 +376,28 @@ img.large {
   margin: 0 0.2rem;
 }
 
+.seller-background {
+  margin-top: 6rem;
+}
+
 .carousel .slide img {
-  max-width: 35rem;
+  max-width: 25rem;
   padding-bottom: 2rem;
 }
 
 .search button {
   border-radius: 0 0.5rem 0.5rem 0;
   border-right: none;
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
+  height: 2.8rem;
 }
 
 .search input {
   border-radius: 0.5rem 0 0 0.5rem;
   border-right: none;
   margin-left: 0.5rem;
-  width: 22rem;
+  width: 18rem;
+  height: 0.6rem;
 }
 
 .active {
