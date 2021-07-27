@@ -89,6 +89,7 @@ button {
   font-family: Helvetica, Arial, sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 button {
@@ -401,10 +402,10 @@ img.large {
 .search input {
   border-radius: 0.5rem 0 0 0.5rem;
   border-right: none;
-  margin-left: 0.5rem;
   min-width: 13rem;
   max-width: 25rem;
   height: 0.6rem;
+  margin-left: 2rem;
 }
 
 .active {

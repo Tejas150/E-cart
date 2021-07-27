@@ -1,6 +1,4 @@
-import https from 'https';
-import fs from 'fs';
-import helmet from 'helmet';
+import http from 'http';
 import {Server}  from 'socket.io';
 import express from 'express';
 import mongoose from 'mongoose';
@@ -16,7 +14,6 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(helmet());
 mongoose.connect("mongodb+srv://Tejas:tejas@29@e-cart.bxlc5.mongodb.net", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -44,12 +41,9 @@ app.use((err, req, res) => {
 });
 
 const port = process.env.PORT || 5000;
-const options = {
-  key: fs.readFileSync(path.resolve('./backend/key.pem')),
-  cert: fs.readFileSync(path.resolve('./backend/cert.pem'))
-};
-const httpsServer = https.createServer(options, app);
-const io = new Server(httpsServer, { cors: { origin: '*' } });
+
+const httpServer = http.Server(app);
+const io = new Server(httpServer, { cors: { origin: '*' } });
 const users = [];
 
 io.on('connection', (socket) => {
@@ -119,6 +113,6 @@ io.on('connection', (socket) => {
     }
   });
 });
-httpsServer.listen(port, () => {
-  console.log(`Serve at https://localhost:${port}`);
+httpServer.listen(port, () => {
+  console.log(`Serve at http://localhost:${port}`);
 });
