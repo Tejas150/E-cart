@@ -167,7 +167,7 @@ a.brand {
 }
 
 .min-30 {
-  min-width: 10rem;
+  min-width: 20rem;
 }
 
 p-1 {
@@ -189,7 +189,7 @@ aside.open {
 }
 
 button.open-sidebar {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 0.2rem 0.5rem;
   margin: 0 0.5rem;
   background: none;
@@ -360,7 +360,7 @@ img.large {
 }
 
 .table {
-  font-size: 1vw;
+  font-size: 2vmin;
   min-width: 5%;
   width: 100%;
   border-collapse: collapse;
@@ -374,13 +374,14 @@ img.large {
 .table th {
   text-align: left;
   border: 0.1rem solid #e4e4e4;
-  padding: 0.5rem;
+  padding: 0.2rem;
   word-break: break-all;
 }
 
 .table button {
-  font-size: 1vw;
-  margin: 0 0.2rem;
+  width: max-content;
+  font-size: 2vmin;
+  margin: 0.2rem;
 }
 
 .seller-background {
