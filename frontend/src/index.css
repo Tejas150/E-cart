@@ -354,7 +354,8 @@ img.large {
 }
 
 .table {
-  min-width: 10%;
+  font-size: 1.3vw;
+  min-width: 5%;
   width: 100%;
   border-collapse: collapse;
 }
@@ -372,6 +373,7 @@ img.large {
 }
 
 .table button {
+  font-size: 1.3vw;
   margin: 0 0.2rem;
 }
 
